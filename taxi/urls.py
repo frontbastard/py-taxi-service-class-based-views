@@ -8,12 +8,12 @@ urlpatterns = [
     path(
         "manufacturers/",
         ManufacturerListView.as_view(),
-        name="manufacturer_list"
+        name="manufacturer-list"
     ),
-    path("cars/", CarListView.as_view(), name="car_list"),
-    path("car/<int:pk>", CarDetailView.as_view(), name="car_detail"),
-    path("drivers/", DriverListView.as_view(), name="driver_list"),
-    path("driver/<int:pk>", DriverDetailView.as_view(), name="driver_detail")
+    path("cars/", CarListView.as_view(), name="car-list"),
+    path("car/<int:pk>", CarDetailView.as_view(), name="car-detail"),
+    path("drivers/", DriverListView.as_view(), name="driver-list"),
+    path("driver/<int:pk>", DriverDetailView.as_view(), name="driver-detail")
 ]
 
 app_name = "taxi"
